@@ -1,5 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Oleg Poyaganov <oleg@poyaganov.com>
+ENV REFRESHED_AT 2016-03-15-01-24
 
 ENV DEBIAN_FRONTEND noninteractive
 
