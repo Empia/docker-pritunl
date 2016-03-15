@@ -23,8 +23,8 @@ COPY run-pritunl.sh /run-pritunl.sh
 
 VOLUME ["/data/db", "/data/run", "/data/log"]
 
-EXPOSE 9700
+EXPOSE 443
+EXPOSE 80
 EXPOSE 1194/udp
-EXPOSE 11194/udp
 
 CMD ["supervisord", "-c", "/supervisord.conf"]
