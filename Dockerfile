@@ -9,7 +9,7 @@ RUN apt-get -y update && \
     apt-add-repository -y 'deb http://repo.pritunl.com/stable/apt trusty main' && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A && \
     apt-get -y update && \
-    apt-get install -y pritunl iptables && \
+    apt-get install -y pritunl iptables ca-certificates && \
     mkdir -p /var/log/pritunl
 
 COPY entrypoint.sh /entrypoint.sh
