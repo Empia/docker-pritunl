@@ -6,4 +6,5 @@ set -e
 [ -c /dev/net/tun ] ||
     mknod /dev/net/tun c 10 200
 
-/usr/bin/pritunl start --pidfile /data/run/pritunl.pid --conf /pritunl.conf
+exec "$@"
+
