@@ -14,8 +14,6 @@ RUN apt-get -y update && \
 
 COPY entrypoint.sh /entrypoint.sh
 
-VOLUME ["/var/log/pritunl"]
-
 EXPOSE 443
 EXPOSE 80
 EXPOSE 1194/udp
