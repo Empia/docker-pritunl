@@ -10,6 +10,7 @@ RUN apt-get -y update && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A && \
     apt-get -y update && \
     apt-get install -y pritunl iptables ca-certificates && \
+    /usr/lib/pritunl/bin/pip install --upgrade python-dateutil && \
     mkdir -p /var/log/pritunl
 
 COPY entrypoint.sh /entrypoint.sh
